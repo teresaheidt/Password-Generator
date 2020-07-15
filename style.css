@@ -50,6 +50,16 @@ header {
   height: 2px;
 }
 
+h3 {
+  font-size: medium;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+ul {
+  font-size: medium;
+}
+
 .card-body {
   min-height: 100px;
 }
