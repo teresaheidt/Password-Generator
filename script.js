@@ -3,6 +3,9 @@ var generateBtn = document.querySelector("#generate")
 
 var numberString = "123456";
 var numberArray = numberString.split("");
+var lowerCase = "dcgheofgrw";
+var upperCase = "SJIGTINDF";
+var specialCase = "#$&@^$)(";
 
 
 function getPasswordOptions() {
@@ -22,35 +25,15 @@ function getPasswordOptions() {
   var isNum = confirm("Click ok to confirm numbers.");
 
 
-  var isUpper = prompt("Choose an upper case letter.");
-  if(isNaN(length) === true) {
-    alert("Click ok to continue.")
-    return;
-  }
-  if(isLower) {
-    alert("make it a capital letter!");
-    return;
-  }
+  function getPasswordOptions() {
+    var length = parseInt(prompt("Type an uppercase character."));
+    if(isNaN(upperCase) === true) {
+      alert("Click ok to continue.")
+      return;
+    }
+    if(lowerCase = )
 
-  var isLower = prompt("Choose a lower case letter.");
-  if(isNaN(length) === true) {
-    alert("Click ok to continue.");
-    return;
-  }
-  if(isUpper) {
-    alert("Make it lower case!");
-    return;
-  }
 
-  var isSymbol = confirm("Click ok to confirm symbols");
-  if(isNaN(length) === true) {
-    alert("Click ok to continue.");
-    return;
-  }
-  if(length<8 || length>128) {
-    alert("Make it a symbol!");
-    return;
-  }
   
   if(isNum === false && isUpper === false && isLower === false && isSymbol ===false) {
     alert("please choice one char type");
