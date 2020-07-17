@@ -15,8 +15,8 @@ var specialCase = "#$&@%!^$)(".split("");
 console.log(specialCase);
 
 function randomArrayVal(arr) {
-  var randomElement = arr[Math.floor(Math.random)]
-  return arr[0];
+  var randomIndex = Math.floor(Math.random * arr.length)
+  return arr[randomIndex]
 }
 
 // start function to generate password
