@@ -40,7 +40,7 @@ function getPasswordOptions() {
   }
 
   if(isNum === false && upperCase === false && lowerCase === false && specialCase ===false) {
-    alert("please choice one character type");
+    alert("please choose one character type");
     return;
   }
 
