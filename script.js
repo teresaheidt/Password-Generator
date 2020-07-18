@@ -23,7 +23,7 @@ function randomArrayVal(arr) {
 function getPasswordOptions() {
   var length = parseInt(prompt("How many characters would you like your password to contain?"));
   if(isNaN(length) === true) {
-    alert("Click ok to continue.")
+    alert("Click ok to continue.");
     return;
   }
   if(length>128) {
@@ -34,7 +34,7 @@ function getPasswordOptions() {
     alert("More numbers please!");
     return;
   }
-  var isNum = confirm("Click ok to confirm numbers.");
+  var isNum = confirm("Click ok to confirm numbers.")
   if(upperCase) {
     passwordOptions = passwordOptions.concat(alphaUpper)
   }
@@ -44,7 +44,7 @@ function getPasswordOptions() {
     return;
   }
 
-  var upperCase = confirm("Do you want to use an uppercase number?");
+  var upperCase = confirm("Do you want to use an uppercase number?")
   var lowerCase = confirm("Do you want to use a lowercase number?")
   var specialCase = confirm("Do you want to use a special character?")
 
@@ -66,11 +66,11 @@ function writePassword() {
   var results = [];
   if(options.isNum === true); 
   if(options.upperCase === true);
-    passwordArray = passwordArray.concat(upperCase);
+    passwordArray = passwordArray.concat(upperCase)
   if(options.lowerCase === true);
-    passwordArray = passwordArray.concat(lowerCase);
+    passwordArray = passwordArray.concat(lowerCase)
   if(options.specialCase === true);
-    passwordArray = passwordArray.concat(specialCase);
+    passwordArray = passwordArray.concat(specialCase)
   {
     passwordArray = passwordArray.concat(numberString)
   }
