@@ -64,19 +64,19 @@ function writePassword() {
   console.log(options);
   var passwordArray = [];
   var results = [];
-  if(options.isNum === true); 
-  if(options.upperCase === true);
+  if(options.isNum === true)
+  if(options.upperCase === true)
     passwordArray = passwordArray.concat(upperCase)
-  if(options.lowerCase === true);
+  if(options.lowerCase === true)
     passwordArray = passwordArray.concat(lowerCase)
-  if(options.specialCase === true);
+  if(options.specialCase === true)
     passwordArray = passwordArray.concat(specialCase)
   {
     passwordArray = passwordArray.concat(numberString)
   }
 
 for(var i = 0; i < options.length; i++) {
-  var index = Math.floor(Math.random() * passwordArray.length);
+  var index = Math.floor(Math.random() * passwordArray.length)
   var digit = passwordArray[index];
   results.push(digit)
   console.log(results)
